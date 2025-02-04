@@ -3,9 +3,13 @@ public class Player {
     private String name;
     private int score;
 
-    public Player(String name, int score) {
+    public Player(String name) {
         this.name = name;
-        this.score = score;
+        this.score = 0;
+    }
+
+    public void increaseScore(){
+        setScore(getScore() + 1);
     }
 
     public String getName() {
